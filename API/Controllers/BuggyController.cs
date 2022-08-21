@@ -24,7 +24,7 @@ namespace API.Controllers
         [HttpGet("auth")]
         public ActionResult<string> GetAuth()
         {
-            return "restricted data";
+            return "Restricted data";
         }
 
         [HttpGet("not-found")]
@@ -45,7 +45,7 @@ namespace API.Controllers
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
         {
-            return BadRequest("this is not a good request");
+            return BadRequest();
         }
     }
 }

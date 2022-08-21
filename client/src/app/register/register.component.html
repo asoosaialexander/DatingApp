@@ -28,12 +28,12 @@
     [label]="'Known As'"
     ngDefaultControl
   ></app-text-input>
-  <app-text-input
+  <app-date-input
     [formControl]="registerForm.controls['dateOfBirth']"
     [label]="'Date of Birth'"
-    [type]="'date'"
+    [maxDate]="maxDate"
     ngDefaultControl
-  ></app-text-input>
+  ></app-date-input>
   <app-text-input
     [formControl]="registerForm.controls['city']"
     [label]="'City'"
